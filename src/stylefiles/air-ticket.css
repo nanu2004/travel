@@ -1,0 +1,669 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900&display=swap");
+
+@media (min-width: 992px) {
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-xl-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media all {
+  *,
+  :after,
+  :before {
+    box-sizing: border-box;
+  }
+
+  *,
+  .elementor ::after,
+  .elementor ::before {
+    box-sizing: border-box;
+  }
+
+  .elementor *,
+  .elementor ::after,
+  .elementor ::before {
+    box-sizing: border-box;
+  }
+
+  :selection {
+    background: #222;
+    color: #ffffff;
+    text-shadow: none;
+  }
+
+  :selection {
+    background: #444;
+    color: #fff;
+    text-shadow: none;
+  }
+
+  .pt-40 {
+    padding-top: 40px;
+  }
+
+  .bdevs-el-content {
+    padding: 61px 0px 0px 0px;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  img {
+    max-width: 100%;
+    transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  img {
+    height: auto;
+  }
+
+  img {
+    transition: 0.3s;
+  }
+
+  .elementor img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    color: #6f6f6f;
+    margin-bottom: 15px;
+    font-weight: 500;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+
+  .bdevs-el-subtitle {
+    font-family: var(--e-global-typography-text-font-family), Sans-serif;
+    font-weight: var(--e-global-typography-text-font-weight);
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: calc(1.325rem + 0.9vw);
+  }
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media all {
+  h2 {
+    font-family: "Roboto", sans-serif;
+    color: #1a1c20;
+    margin: 0px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: normal;
+    margin-bottom: 10px;
+  }
+
+  .section-title {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 0px;
+    font-weight: 700;
+  }
+
+  .bdevs-el-title {
+    font-family: var(--e-global-typography-secondary-font-family), Sans-serif;
+    font-weight: var(--e-global-typography-secondary-font-weight);
+  }
+
+  .bdevs-el-title {
+    margin-bottom: 10px;
+    font-family: "Roboto Slab", Sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6f6f6f;
+    margin-bottom: 10px;
+  }
+
+  .pt-30 {
+    padding-top: 30px;
+  }
+
+  .pb-25 {
+    padding-bottom: 25px;
+  }
+
+  .mr-25 {
+    margin-right: 25px;
+  }
+
+  .bdevs-el-content p {
+    font-family: var(--e-global-typography-accent-font-family), Sans-serif;
+    font-weight: var(--e-global-typography-accent-font-weight);
+  }
+}
+
+/*  */
+
+@font-face {
+  font-family: "Font Awesome 5 Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src: url(https://gurukirpatravels.ca/wp-content/themes/visapass/assets/fonts/fa-light-300.eot);
+  src: url(https://gurukirpatravels.ca/wp-content/themes/visapass/assets/fonts/fa-light-300.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://gurukirpatravels.ca/wp-content/themes/visapass/assets/fonts/fa-light-300.woff2)
+      format("woff2"),
+    url(https://gurukirpatravels.ca/wp-content/themes/visapass/assets/fonts/fa-light-300.woff)
+      format("woff"),
+    url(https://gurukirpatravels.ca/wp-content/themes/visapass/assets/fonts/fa-light-300.ttf)
+      format("truetype"),
+    url(https://gurukirpatravels.ca/wp-content/themes/visapass/assets/fonts/fa-light-300.svg#fontawesome)
+      format("svg");
+}
+@font-face {
+  font-family: "Font Awesome 5 Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://gurukirpatravels.ca/wp-content/themes/visapass/assets/fonts/fa-regular-400.eot);
+  src: url(https://gurukirpatravels.ca/wp-content/themes/visapass/assets/fonts/fa-regular-400.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://gurukirpatravels.ca/wp-content/themes/visapass/assets/fonts/fa-regular-400.woff2)
+      format("woff2"),
+    url(https://gurukirpatravels.ca/wp-content/themes/visapass/assets/fonts/fa-regular-400.woff)
+      format("woff"),
+    url(https://gurukirpatravels.ca/wp-content/themes/visapass/assets/fonts/fa-regular-400.ttf)
+      format("truetype"),
+    url(https://gurukirpatravels.ca/wp-content/themes/visapass/assets/fonts/fa-regular-400.svg#fontawesome)
+      format("svg");
+}
+@font-face {
+  font-family: "Font Awesome 5 Pro";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(https://gurukirpatravels.ca/wp-content/themes/visapass/assets/fonts/fa-solid-900.eot);
+  src: url(https://gurukirpatravels.ca/wp-content/themes/visapass/assets/fonts/fa-solid-900.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://gurukirpatravels.ca/wp-content/themes/visapass/assets/fonts/fa-solid-900.woff2)
+      format("woff2"),
+    url(https://gurukirpatravels.ca/wp-content/themes/visapass/assets/fonts/fa-solid-900.woff)
+      format("woff"),
+    url(https://gurukirpatravels.ca/wp-content/themes/visapass/assets/fonts/fa-solid-900.ttf)
+      format("truetype"),
+    url(https://gurukirpatravels.ca/wp-content/themes/visapass/assets/fonts/fa-solid-900.svg#fontawesome)
+      format("svg");
+}
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+@media all {
+  body {
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #6f6f6f;
+    font-style: normal;
+  }
+}
+body {
+  /* CSS Variables that may have been missed get put on body */
+  --bs-gutter-x: 30px;
+  --bs-gutter-y: 0;
+}
+
+@media all {
+  :root {
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Noto Color Emoji";
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+@media all {
+  .row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) / 2);
+    padding-left: calc(var(--bs-gutter-x) / 2);
+    margin-top: var(--bs-gutter-y);
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-xl-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media all {
+  *,
+  :after,
+  :before {
+    box-sizing: border-box;
+  }
+
+  *,
+  .elementor ::after,
+  .elementor ::before {
+    box-sizing: border-box;
+  }
+
+  .elementor *,
+  .elementor ::after,
+  .elementor ::before {
+    box-sizing: border-box;
+  }
+
+  :selection {
+    background: #222;
+    color: #ffffff;
+    text-shadow: none;
+  }
+
+  :selection {
+    background: #444;
+    color: #fff;
+    text-shadow: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media all {
+  .mb-30 {
+    margin-bottom: 30px;
+  }
+
+  .services-itm-color {
+    background: #fbf7ee;
+  }
+
+  .services-items {
+    padding: 25px 35px;
+  }
+
+  .elementor-repeater-item-270c8e0 {
+    background-color: #f8f8f8;
+  }
+
+  .elementor-repeater-item-f26874f {
+    background-color: #f1f8f9;
+  }
+
+  .elementor-repeater-item-e4c5272 {
+    background-color: #f9f6f6;
+  }
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  h4 {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+}
+
+@media (min-width: 1200px) {
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media all {
+  h4 {
+    font-family: "Roboto", sans-serif;
+    color: #1a1c20;
+    margin: 0px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: normal;
+    margin-bottom: 10px;
+  }
+
+  .services-items__title {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 30px;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6f6f6f;
+    margin-bottom: 10px;
+  }
+
+  .services-items p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    margin-right: 25px;
+  }
+
+  a {
+    color: #0d6efd;
+    text-decoration: underline;
+  }
+
+  a {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    text-decoration: none;
+  }
+
+  a {
+    color: inherit;
+    outline: medium none;
+    text-decoration: none;
+  }
+
+  a {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+
+  .aborder1 {
+    border: 1px solid #9b8d6c;
+  }
+
+  .elementor a {
+    box-shadow: none;
+    text-decoration: none;
+  }
+
+  .services-items a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+}
+
+.services-items a {
+  width: 50px;
+  height: 83px;
+  line-height: 59px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  display: none !important;
+}
+
+@media all {
+  a:hover {
+    color: #0a58ca;
+  }
+
+  a:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .services-items a:hover {
+    background: #e48216;
+    border: 1px solid #e48216;
+  }
+}
+
+.services-items a:hover {
+  background: #d52b1e;
+}
+
+.services-items a:hover {
+  color: #d52b1e;
+}
+
+.services-items a:hover {
+  border-color: #d52b1e;
+}
+
+@media all {
+  .services-items a:hover {
+    background: #e48216;
+    border: 1px solid #e48216;
+  }
+}
+
+.top-button a,
+.slider-active .slide-prev:hover,
+.slider-active .slide-next:hover,
+.theme-btn,
+.theme-bg,
+.features:hover .features__content,
+.famous-countries .owl-nav div i:hover,
+.countries-item__top-img-link a:hover,
+.calltoaction-btn .cl-btn:hover,
+.team-social a:hover,
+.testimonail-area .owl-carousel .owl-dots .active span,
+.footer-about-1 .social_links li a:hover,
+.subscribe-footer form button,
+.steps-box:hover i,
+.browse-box:hover,
+.testimonial-2 .owl-carousel .owl-dots .active span,
+.testimonial-2 .owl-nav div:hover i,
+.social ul li a:hover,
+.project-filter li.active,
+.visapass_duration_tag,
+.courses__meta ul li a:hover,
+.services-items a:hover,
+.business-btn:hover,
+.ab-tabs .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link,
+.abtbs-round span,
+.team__details-social ul li a:hover,
+.cat-link ul li .active,
+.faq-tab .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link,
+.sidebar__widget--title::before,
+.v_blog_btn,
+.basic-pagination ul li span.current,
+.basic-pagination ul li a:hover,
+.widget_tag_cloud .tagcloud a:hover,
+.ablog__text4 blockquote cite::before,
+.blog__deatails--tag a:hover,
+.contact__gpinfo:hover {
+  background: #d52b1e;
+}
+
+.main-menu-wrapper__call-icon a i,
+.main-menu-wrapper__call-number h5,
+.main-menu ul li:hover a,
+.main-menu ul li .sub-menu li:hover > a,
+.nav-search:hover,
+.about-span span,
+.fact h1,
+.fact h1 span,
+.countries-item__top-img-link a,
+.team__text-title:hover,
+.testimonail__wrapper__info__quotes i,
+.testimonail__wrapper__content__reviews ul li i,
+.blog-meta span i,
+.blog__content__title a:hover,
+.read-more a:hover,
+.footer-widget_menu-link-info li a i,
+.copyright-botom-right ul li a:hover,
+.about2__icon i,
+.steps-box__icon i,
+.features2__icon i,
+.features2:hover .read-more,
+.testimonail__footer ul li i,
+.blog2__content__title:hover,
+.project-filter li.active,
+.courses-content__title:hover,
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after,
+.services-items a:hover,
+.factn-color span,
+.abfact-items span,
+.check-use a i,
+.play-btn i,
+.cat-link ul li a::before,
+.business__items-single i,
+.necessary__box ul li i,
+.business-btn,
+.information-info ul li:last-child span,
+.information-info ul li:last-child span:last-child,
+.breadcrumbs li span:hover,
+.abtb-content span,
+.beautiful-link ul li .active,
+.beautiful-link ul li a:hover,
+.sidebar--widget__search form button i,
+.rc-text h6:hover,
+.ablog__meta4 ul li a i,
+.ablog__meta ul li a:hover,
+.widget ul li a::before,
+.widget ul li a:hover,
+.v_blog_btn:hover,
+.ablog__text--title4:hover,
+.ablog__text4 blockquote::before,
+.contact__gpinfo-icon i,
+.progress-wrap::after {
+  color: #d52b1e;
+}
+
+.main-menu ul li .sub-menu,
+.features:hover .features__content,
+.calltoaction-btn .cl-btn:hover,
+.footer-about-1 .social_links li a:hover,
+.steps-box__icon i,
+.features2:hover,
+.services-items a:hover,
+.business-btn,
+.ab-tabs .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link,
+.faq-tab .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link,
+.widget_tag_cloud .tagcloud a:hover,
+.blog__deatails--tag a:hover,
+.clto-btn-2:hover,
+.social ul li a:hover {
+  border-color: #d52b1e;
+}
+
+@media all {
+  i {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    text-decoration: none;
+  }
+
+  .fal {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+  }
+
+  .fal {
+    font-weight: 300;
+  }
+
+  .fal {
+    font-family: "Font Awesome 5 Pro";
+  }
+
+  .aborder1 i {
+    color: #9b8d6c;
+  }
+
+  .services-items a i {
+    font-size: 20px;
+  }
+
+  .fa-long-arrow-right:before {
+    content: "\f178";
+  }
+}

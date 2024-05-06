@@ -1,0 +1,52 @@
+.elementor-widget-container {
+  width: 100%;
+  padding: 10px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+.elementor-element .elementor-icon-list-item {
+  display: flex;
+  font-size: inherit;
+  align-items: center;
+}
+
+.indian-tour-show {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+.icon.icon-checked1::before {
+  content: "\e9f2";
+}
+
+.icon-list-text {
+  color: #d52b1e;
+}
+
+.elementor-icon-list-icon i {
+  color: #d52b1e;
+}
+
+ul {
+  list-style: none;
+}
+
+.indian-ui li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2px;
+  margin: 10px 0;
+}
+.indian-ui li span svg {
+  color: #00b9f2;
+}
