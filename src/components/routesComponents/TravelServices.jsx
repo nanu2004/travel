@@ -71,7 +71,7 @@ function TravelServices() {
               <div className="service-content">
                 {service.svg}
                 <h2>{service.title}</h2>
-                <p className="para">{service.content}</p>
+                <p className="para" style={{  overflow: "hidden",  lineHeight:"24px" }}>{service.content}</p>
               </div>
             </div>
           ))}

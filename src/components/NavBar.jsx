@@ -1,12 +1,18 @@
 import { useState } from "react";
 import "../stylefiles/dropdown.css";
 import { NavLink } from "react-router-dom";
+import { FiChevronDown, FiX } from "react-icons/fi";
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+
+
+
+
+
   return (
     <>
       <div className="container-fluid bg-light pt-3 d-none d-lg-block">
@@ -88,8 +94,8 @@ export default function NavBar() {
         </div>
       </div>
 
-      {/*navbar main  */}
-
+{/* Mobile Navbar */}
+      {/* Mobile Navbar */}
       <div className="container-fluid position-relative nav-bar p-0">
         <div
           className="container-lg position-relative p-0 px-lg-3"
@@ -102,15 +108,23 @@ export default function NavBar() {
               </h1>
             </NavLink>
             <button
-              type="button"
-              className="navbar-toggler"
-              data-toggle="collapse"
-              data-target="#navbarCollapse"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
+  className="navbar-toggler"
+  type="button"
+  data-toggle="collapse"
+  data-target="#navbarCollapse"
+  aria-controls="navbarCollapse"
+  aria-expanded="false"
+  aria-label="Toggle navigation"
+  onClick={toggleDropdown} // Call toggleDropdown function when the button is clicked
+>
+{isOpen ? <FiX /> : <span className="navbar-toggler-icon"></span>}
+
+</button>
+
             <div
-              className="collapse navbar-collapse justify-content-between px-3"
+              className={`collapse navbar-collapse justify-content-between px-3 ${
+                isOpen ? "show" : ""
+              }`}
               id="navbarCollapse"
             >
               <div className="navbar-nav ml-auto py-0">
@@ -121,57 +135,68 @@ export default function NavBar() {
                   About
                 </NavLink>
                 {/* DropDown */}
-
                 <div className="dropdown">
+
                   <div
-                    className="nav-item nav-link services"
+                    className="nav-item nav-link services d-flex align-items-center"
                     onClick={toggleDropdown}
                   >
-                    Travel Services
+                    Travel Services <FiChevronDown /> {/* Add the icon here */}
                   </div>
                   {isOpen && (
                     <div className="dropdown-content">
                       {/* Dropdown items */}
                       <NavLink
                         to="air-tickets"
-                        className={({ isActive }) => (isActive ? "black" : "")}
+                        className={({ isActive }) =>
+                          isActive ? "black" : ""
+                        }
                       >
                         Air Tickets
                       </NavLink>
                       <NavLink
                         to="visitor-visa"
-                        className={({ isActive }) => (isActive ? "black" : "")}
+                        className={({ isActive }) =>
+                          isActive ? "black" : ""
+                        }
                       >
                         Visitor Visa
                       </NavLink>
                       <NavLink
                         to="indian-visa"
-                        className={({ isActive }) => (isActive ? "black" : "")}
+                        className={({ isActive }) =>
+                          isActive ? "black" : ""
+                        }
                       >
                         Indian Visa
                       </NavLink>
                       <NavLink
                         to="supar-visa"
-                        className={({ isActive }) => (isActive ? "black" : "")}
+                        className={({ isActive }) =>
+                          isActive ? "black" : ""
+                        }
                       >
                         Supar Visa
                       </NavLink>
                       <NavLink
                         to="uk-visa"
-                        className={({ isActive }) => (isActive ? "black" : "")}
+                        className={({ isActive }) =>
+                          isActive ? "black" : ""
+                        }
                       >
                         UK Visa
                       </NavLink>
                       <NavLink
                         to="china-visa"
-                        className={({ isActive }) => (isActive ? "black" : "")}
+                        className={({ isActive }) =>
+                          isActive ? "black" : ""
+                        }
                       >
                         China Visa
                       </NavLink>
                     </div>
                   )}
                 </div>
-
                 {/*  */}
                 <NavLink to="/immigration" className="nav-item nav-link">
                   Immigration

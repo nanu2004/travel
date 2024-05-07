@@ -52,6 +52,7 @@ export function Slider() {
                   className="w-100 hero-img animate__animated animate__zoomIn"
                   src={slide}
                   alt="Image"
+                  style={{ height: "600px" }} // Increase the height here
                 />
                 <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                   <div className="p-3" style={{ maxWidth: "900px" }}>

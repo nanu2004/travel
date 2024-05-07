@@ -26,7 +26,7 @@ a:hover {
   display: grid;
   grid-gap: 1.5rem;
   grid-template-rows: repeat(2, 22rem);
-  grid-template-columns: repeat(4, 17rem);
+  grid-template-columns: repeat(3, 13rem);
 }
 .eachdiv {
   padding: 1rem 2rem;
@@ -44,6 +44,7 @@ a:hover {
 }
 .div2 {
   background: #49556b;
+  
   grid-column: 3/4;
   grid-row: 1/2;
 }
@@ -93,22 +94,26 @@ a:hover {
   color: #49505a;
 }
 .detbox .designation {
-  color: hsl(0, 0%, 81%);
+  color: #f9f9f9f9;
   opacity: 50%;
   font-size: 0.8rem;
 }
 .detbox .designation.dark {
-  color: #49505a;
+  color: #f4f4f4;
 }
 .review h4 {
-  font-size: 1.4rem;
+  
   color: #f3deff;
-  font-weight: 600;
+  font-size:"2rem";
   line-height: 1.5;
   margin-bottom: 0.8rem;
+   overflow: "hidden";
+   white-space: "nowrap";
+  
 }
 .review.dark h4 {
   color: #4b5258;
+
 }
 .review p {
   font-size: 0.95rem;

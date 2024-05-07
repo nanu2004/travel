@@ -55,7 +55,7 @@ const TestimonialSlide = ({ imageSrc, name, designation, review }) => (
       </div>
     </div>
     <div className="review">
-      <h4>{review.heading}</h4>
+      <h4 style={{  overflow: "hidden" }}>{review.heading}</h4>
     </div>
   </div>
 );
@@ -100,7 +100,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div style={{ width: "90%", margin: "0 auto" }}>
+    <div style={{ width: "80%", margin: "0 auto" }}>
       <div>
         <div className="heading-main-design animate__animated animate__fadeInDown">
           <h1>

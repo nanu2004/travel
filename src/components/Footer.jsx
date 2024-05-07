@@ -3,18 +3,16 @@ import { NavLink } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <div
-        className="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5"
-        style={{ marginTop: "90px" }}
-      >
-        <div className="row pt-5">
-          <div className="col-lg-3 col-md-6 mb-5">
+      <div className="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style={{ marginTop: "90px" }}>
+        <div className="row pt-5 d-flex gap-5">
+          <div className="col-lg mb-5">
             <NavLink to="/" className="navbar-brand">
               <h1 className="text-primary">
                 <span className="text-white">TRAVEL</span>ER
               </h1>
             </NavLink>
             <p>
+
               Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet
               labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor
             </p>
@@ -24,7 +22,7 @@ function Footer() {
             >
               Follow Us
             </h6>
-            <div className="d-flex justify-content-start">
+            <div className="flex justify-content-start">
               <NavLink
                 className="btn btn-outline-primary btn-square mr-2"
                 href="#"
@@ -76,7 +74,7 @@ function Footer() {
               </NavLink>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 mb-5">
+          <div className="col-lg  mb-5">
             <h5
               className="text-white text-uppercase mb-4"
               style={{ letterSpacing: "5px" }}
@@ -107,7 +105,7 @@ function Footer() {
               </NavLink>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 mb-5">
+          <div className="col-lg  mb-5">
             <h5
               className="text-white text-uppercase mb-4"
               style={{ letterSpacing: "5px" }}
@@ -138,7 +136,7 @@ function Footer() {
               </NavLink>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 mb-5">
+          <div className="col-lg mb-5">
             <h5
               className="text-white text-uppercase mb-4"
               style={{ letterSpacing: "5px" }}

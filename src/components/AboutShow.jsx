@@ -31,13 +31,13 @@ const data = [
 export function AboutShow() {
   return (
     <div style={{ width: "90%", margin: "0 auto" }}>
-      <div className="top-heading">
+      <div className="top-heading py-5">
         <h1 className="mainHeading m-50">About us</h1>
       </div>
-      <div className="container-fluid py-5">
-        <div className="container pt-5">
+      <div className="container-fluid py-2 ">
+        <div className="container pb-5 ">
           <div className="row">
-            <div className="col-lg-6" style={{ minHeight: "500px" }}>
+            <div className="col-lg-6" style={{ minHeight: "500px"}}>
               <div className="position-relative h-100 animate__animated animate__fadeInLeft ">
                 <img
                   className="position-absolute w-100 h-100"
@@ -48,25 +48,20 @@ export function AboutShow() {
             </div>
             <div className="col-lg-6 pt-5 pb-lg-5">
               <div className="about-text bg-white p-4 p-lg-5 my-lg-5">
-                <h3
-                  className="text-primary text-uppercase"
-                  style={{ letterSpacing: "5px", fontSize: "26px" }}
-                >
-                  About Us
-                </h3>
-                <h1 className="mb-3" style={{ margin: "4px 0" }}>
+              <h3
+        className="text-primary text-uppercase"
+        style={{ fontSize: "30px", fontWeight: "700", fontFamily: "Roboto, sans-serif" }}
+      >
+        About Us
+      </h3>
+
+                <h1 className="mb-3" style={{ margin: "4px 0",fontSize: "28px", fontWeight: "400", fontFamily: "Roboto, sans-serif" }}>
                   Unveil Your Journey: Discover the World with Us
                 </h1>
-                <p>
-                  Embark on a voyage of unparalleled experiences with [Your
-                  Travel Agency Name]. We are not just another travel agency; we
-                  are your ultimate gateway to exploration, adventure, and
-                  unforgettable memories. At [Your Travel Agency Name], we
-                  believe that travel is not just about reaching a destination;
-                  it&apos;s about the journey, the moments, and the stories that
-                  unfold along the way. With a passion for crafting bespoke
-                  itineraries and a commitment to unparalleled service, we
-                  invite you to join us as we redefine the art of travel.
+                <p style={{  overflow: "hidden",  whiteSpace: "nowrap",lineHeight:"24px"  }}>
+    {/* Your paragraph text here */}
+
+                  Embark on a voyage of unparalleled experiences with [Your Travel Agency Name]. We are not just another travel agency; we are your ultimate gateway to exploration, adventure, and unforgettable memories. At [Your Travel Agency Name], we believe that travel is not just about reaching a destination;it&apos;s about the journey, the moments, and the stories that unfold along the way. With a passion for crafting bespoke itineraries and a commitment to unparalleled service, we invite you to join us as we redefine the art of travel.
                 </p>
                 <p>
                   At [Your Travel Agency Name], our mission is simple: to
@@ -99,7 +94,7 @@ export function AboutShow() {
         </div>
       </div>
       {/*  */}
-      <div className="heading-main-design animate__animated animate__fadeInDown">
+      <div className="heading-main-design animate__animated animate__fadeInDown ">
         <h1>
           Why choose us
           <span style={{ display: "block" }}>here is the Reason</span>
@@ -113,6 +108,7 @@ export function AboutShow() {
           flexWrap: "wrap",
           gap: "10px",
           marginTop: "30px",
+          
         }}
       >
         {data.map((item, index) => (
@@ -129,11 +125,12 @@ export function AboutShow() {
 function Box({ title, content }) {
   return (
     <div style={{ width: "250px" }}>
-      <div className="container-card">
+      <div className="container-card ">
         <div className="box">
           <span className="title">{title}</span>
 
-          <p>{content}</p>
+          <p style={{ overflow: "hidden",
+     }}>{content}</p>
         </div>
       </div>
     </div>
